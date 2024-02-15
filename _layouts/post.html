@@ -4,35 +4,66 @@ layout: default
 
 <div class="post">
   <div class="post-info">
-    <span>Written by</span>
-    {% if page.author %}
-        {{ page.author }}
-    {% else %}
-        {{ site.author.name }}
-    {% endif %}
+    <div class="post-info-category">
+      {% for category in page.categories %}
+      <a href="{{site.baseurl}}/categories#{{category}}">
+        <span>{{ category }}</span><span>&nbsp;</span>
+      </a>
+      {% endfor %}
+    </div>
+    <div class="post-info-tag">
+      {% for tag in page.tags %}
+      <a href="{{site.baseurl}}/tags#{{tag}}">
+        <div id="{{ tag }}">
+          <svg
+            class="tags-item-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-tag"
+          >
+            <path
+              d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"
+            ></path>
+            <line x1="7" y1="7" x2="7.01" y2="7"></line>
+          </svg>
+          <span>{{ tag }}</span>
+        </div>
+      </a>
 
-    {% if page.date %}
-      <br>
-      <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
-    {% endif %}
+      {% endfor %}
+    </div>
   </div>
 
   <h1 class="post-title">{{ page.title }}</h1>
+
   <div class="post-line"></div>
 
   {{ content }}
+  <div class="post-datetime">
+    {% if page.date %}
+    <time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+    {% endif %}
+  </div>
 </div>
 
-{% if page.comments %}
-  {% include disqus_comments.html %}
-{% endif %}
+{% if page.comments %} {% include disqus_comments.html %} {% endif %}
 
 <div class="pagination">
   {% if page.next.url %}
-    <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
-  {% endif %}
-  {% if page.previous.url %}
-    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
+  <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow"
+    >&#8592;</a
+  >
+  {% endif %} {% if page.previous.url %}
+  <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow"
+    >&#8594;</a
+  >
   {% endif %}
 
   <a href="#" class="top">Top</a>

@@ -10,6 +10,28 @@
     span {
       font-style: italic;
     }
+
+    &-category {
+      display: inline-block;
+
+      a {
+        color: #aaa;
+      }
+    }
+
+    &-tag {
+      display: inline-block;
+
+      a {
+        color: #aaa;
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
   }
 
   &-title {
@@ -25,6 +47,12 @@
     display: block;
     margin: 0 auto 3rem;
     width: 4rem;
+  }
+
+  &-datetime {
+    color: $default-tint;
+    font-family: $serif-secondary;
+    letter-spacing: 0.5px;
   }
 
   p {
