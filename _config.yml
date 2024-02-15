@@ -30,7 +30,8 @@ plugins:
   # - jemoji #Uncomment this to allow emoji in your post
 
 # Permalinks
-permalink: /:year-:month-:day/:title
+#permalink: /:year-:month-:day/:title
+permalink: /:categories/:year-:month-:day/:slug
 paginate: 5
 # Excludes
 # exclude: [Gemfile, Gemfile.lock]
