@@ -54,6 +54,8 @@ Best Practice를 도출하기 위해 우리가 선택한 방식은 전반적으�
 <br>
 팀 프로젝트를 진행하더라도 업무를 파트로 분배하여 동일한 주제로 코드를 작성하는 기회가 많이 없었다. 하지만 이번 프로젝트에서는 동일한 주제를 다루고 있어서, 다른 팀원들이 어떻게 고민한 부분을 해결했는지 살펴보고 배울 수 있었다. 또한, 고민하고 있는 부분을 팀원들과 함께 토론하며 해결해 나가는 과정이 매우 즐거웠다.
 
-## 1주차 레파지토리
+## 최종결과
+
+<img src="https://user-images.githubusercontent.com/80516736/221163889-f6e55521-5a84-402b-bb25-977f35efd3a1.gif">
 
 [https://github.com/wanted-pre-7/wanted-pre-onboarding-frontend](https://github.com/wanted-pre-7/wanted-pre-onboarding-frontend)
