@@ -15,6 +15,7 @@ categories: "Study"
 si에서 jsp만 사용하다가 view와 리액트에 대해 알게되어 한번 공부해봐야겠다 생각하고 있었다.  
 그런데 우연히 [원티드 프리온보딩 프론트엔드 인턴십](https://www.wanted.co.kr/events/pre_ob_fe_9?utm_source=email&utm_medium=braze_mkt&utm_campaign=learning_pre_ob_fe_9) 광고를 보게 됬다.  
 리액트로 기업과제를 수행할수 있고, 게다가 팀과제를 경험할 수 있다니 안할 이유가 없었다.
+<br>
 
 ## 선발 과제
 
